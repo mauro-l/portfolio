@@ -1,0 +1,71 @@
+:root {
+    /* Palette */
+    --primary-solid: #F9FAFB;
+    --primary-950: #030712;
+    --primary-900: #111827;
+    --primary-800: #1f2937;
+    --primary-700: #374151;
+    --primary-600: #4b5563;
+    --primary-500: #6b7280;
+    --primary-400: #9ca3af;
+    --primary-300: #d1d5db;
+    --primary-200: #e5e7eb;
+    --primary-100: #f3f4f6;
+    --primary-50: #F9FAFB;
+    
+    --dark-bg-solid: #30343F;
+    --primary-bg-solid: #F9FAFB;
+
+    --primary-font-title: #111827;
+    --primary-font-solid: #4B5563;
+    
+
+    /* Typography */
+    --base-font: "Inter", serif;
+    --alternative-font: "Poppins", serif;
+
+    /* Font-sizes */
+    --text-6xl: 3.75rem;
+    --text-5xl: 3rem;
+    --text-4xl: 2.25rem;
+    --text-3xl: 1.8rem;
+    --text-2xl: 1.5rem;
+    --text-xl: 1.25rem;
+    --text-lg: 1.125rem;
+    --text-base: 1rem;
+    --text-sm: 0.875rem;
+    --text-xs: 0.75rem;
+
+    /* Shadow */
+    --btn-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    --shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
+
+    /* Breakpoints */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    
+}
+
+.dark{
+    /*dark mode */
+    --primary-solid: #030712;
+    --primary-950: #ffffff;
+    --primary-900: #f9fafb;
+    --primary-800: #f3f4f6;
+    --primary-700: #e5e7eb;
+    --primary-600: #d1d5db;
+    --primary-500: #9ca3af;
+    --primary-400: #6b7280;
+    --primary-300: #4b5563;
+    --primary-200: #374151;
+    --primary-100: #1f2937;
+    --primary-50:  #111827;
+    
+    --primary-bg-solid: #30343F;
+
+    --primary-font-title: #F9FAFB;
+    --primary-font-solid: #D1D5DB;
+}

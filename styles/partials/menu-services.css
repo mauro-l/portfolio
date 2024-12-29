@@ -1,0 +1,255 @@
+.service-card-img {
+    width: 77px;
+    height: 77px;
+    filter: brightness(0) saturate(100%) invert(77%) sepia(7%) saturate(1416%) hue-rotate(60deg) brightness(95%) contrast(85%);
+}
+
+.service-card-text > h3 {
+    margin: 1rem 0;
+    font-size: var(--text-xl);
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.service-card-text > p {
+    color: var(--dark-500);
+    transition: color 0.2s ease;
+}
+
+.service-card-rest {
+  position: relative;
+  background-color: var(--light-bg-accent);
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  max-width: 270px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.service-card-rest:hover {
+    transform: scale(1.05);
+}
+
+.service-card-rest::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/gallery/grid/restaurant-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -2;
+  }
+
+.service-card-rest::after {    
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+    background-color: var(--primary-700);
+    opacity: 0;
+}
+
+.service-card-rest:hover::before {
+    opacity: 1;
+}
+
+.service-card-rest:hover::after {
+    opacity: 1;
+}
+
+.service-card-rest:hover .service-card-text > h3,
+.service-card-rest:hover .service-card-text > p {
+    color: var(--light-font-solid);
+}
+
+ /* drinks */ 
+ 
+.service-card-drink {
+    position: relative;
+    background-color: var(--light-bg-accent);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    max-width: 270px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.service-card-drink:hover {
+    transform: scale(1.05);
+}
+
+.service-card-drink::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/gallery/grid/drinks-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -2;
+}
+
+.service-card-drink::after {    
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+    background-color: var(--primary-700);
+    opacity: 0;
+}
+
+.service-card-drink:hover::before {
+    opacity: 1;
+}
+
+.service-card-drink:hover::after {
+    opacity: 1;
+}
+
+.service-card-drink:hover .service-card-text > h3,
+.service-card-drink:hover .service-card-text > p {
+    color: var(--light-font-solid);
+}
+
+ /* cofee */
+
+.service-card-coffee {
+    position: relative;
+    background-color: var(--light-bg-accent);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    max-width: 270px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.service-card-coffee:hover {
+    transform: scale(1.05);
+}
+
+.service-card-coffee::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/gallery/grid/coffee-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -2;
+}
+
+.service-card-coffee::after {    
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+    background-color: var(--primary-700);
+    opacity: 0;
+}
+
+.service-card-coffee:hover::before {
+    opacity: 1;
+}
+
+.service-card-coffee:hover::after {
+    opacity: 1;
+}
+
+.service-card-coffee:hover .service-card-text > h3,
+.service-card-coffee:hover .service-card-text > p {
+    color: var(--light-font-solid);
+}
+
+/* dessert */
+
+.service-card-dessert {
+  position: relative;
+  background-color: var(--light-bg-accent);
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  max-width: 270px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.service-card-dessert:hover {
+    transform: scale(1.05);
+}
+
+.service-card-dessert::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/gallery/grid/dessert-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -2;
+  }
+
+.service-card-dessert::after {    
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+    background-color: var(--primary-700);
+    opacity: 0;
+}
+
+.service-card-dessert:hover::before {
+    opacity: 1;
+}
+
+.service-card-dessert:hover::after {
+    opacity: 1;
+}
+
+.service-card-dessert:hover .service-card-text > h3,
+.service-card-dessert:hover .service-card-text > p {
+    color: var(--light-font-solid);
+}

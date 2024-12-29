@@ -1,0 +1,30 @@
+button {
+    padding: 0.375rem 1rem;
+    border-radius: 12px;
+    gap: 8px;
+    background-color: var(--primary-900);
+    color: var(--primary-50);
+    border: none;
+    box-shadow: none;
+    transition: color .2s ease ;
+}
+
+.light {
+    background-color: var(--primary-50);
+    color: var(--primary-900);
+}
+
+button:hover {
+    background-color: var(--primary-700);
+}
+
+.light:hover {
+    background-color: var(--primary-200);
+}
+button:active {
+    background-color: var(--primary-800);
+}
+
+.light:active {
+    background-color: var(--primary-100);
+}
