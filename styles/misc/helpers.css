@@ -29,3 +29,21 @@
     color: var(--primary-600);
     text-align: center;
 }
+
+@media ( min-width: 1280px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+}
+
+@media ( min-width: 1440px) {
+    .container {
+        max-width: 1536px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+}

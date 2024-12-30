@@ -2,6 +2,7 @@
     background-color: var(--primary-100);
     padding: 4rem 1rem;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .skill-sections p {
@@ -32,4 +33,22 @@
 
 .skill-tech > img {
     margin: 0 auto;
+}
+
+@media ( min-width: 1024px) {
+
+    .skill-sections {
+        padding: 8rem 2rem;
+    }
+
+    .skill-sections p {
+        padding: 1rem 0;
+    }
+
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 2.5rem 0;
+        gap: 2.5rem;
+    }
 }

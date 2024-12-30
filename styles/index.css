@@ -23,6 +23,7 @@
 
 @import url('./components/button.css');
 @import url('./components/card-projects.css');
+@import url('./components/card-experience.css');
 /*@import url('./components/hero-card.css');
 @import url('./components/today_menu-card.css');
 @import url('./components/chefs-card.css');
@@ -33,6 +34,7 @@
 
 @import url('./sections/home.css');
 @import url('./sections/skills.css');
+@import url('./sections/works.css');
 /*
 @import url('./pages/admin.css');
 @import url('./pages/login.css');

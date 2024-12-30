@@ -69,32 +69,36 @@
             eveniet ipsum repellat laudantium voluptas facilis. Dolorem aliquid
             eligendi minima dignissimos error.
           </p>
-        </article>
-        <article class="flex-center info-hero">
-          <ul>
-            <li>
-              <img src="./public/icons/landing/gps.svg" alt="gps icon" />
-              <p>Quilmes - Buenos Aires | Argentina</p>
-            </li>
-            <li>
-              <img
-                src="./public/icons/landing/status.svg"
-                alt="status icon"
-                class="status"
-              />
-              <p>Disponible para nuevos proyectos</p>
-            </li>
-          </ul>
-          <div class="btn-contactme-box">
-            <button class="btn-contactme">Contactame!</button>
+          <div class="flex-center info-hero">
+            <ul>
+              <li>
+                <img
+                  src="./public/icons/landing/gps.svg"
+                  class="gps-icon"
+                  alt="gps icon"
+                />
+                <p>Quilmes - Buenos Aires | Argentina</p>
+              </li>
+              <li>
+                <img
+                  src="./public/icons/landing/status.svg"
+                  alt="status icon"
+                  class="status"
+                />
+                <p>Disponible para nuevos proyectos</p>
+              </li>
+            </ul>
+            <div class="btn-contactme-box">
+              <button class="btn-contactme">Contactame!</button>
+            </div>
           </div>
         </article>
       </section>
       <!-- Skills -->
       <section class="flex-center-center skill-sections">
-        <h4 class="pills">skills</h4>
+        <h4 class="pills">Skills</h4>
         <p>The skills, tools and technologies I am really good at:</p>
-        <picture class="skill-grid">
+        <picture class="container skill-grid">
           <figure class="skill-tech">
             <img
               src="./public/assets/skills/icon-js.png"
@@ -168,31 +172,40 @@
         </picture>
       </section>
       <!-- Proyectos -->
-      <section>
+      <section class="container flex-center-center works-sections">
         <h4 class="pills">Projects</h4>
-        <p>Some of the noteworthy projects I have built:</p>
+        <p class="description-section">
+          Some of the noteworthy projects I have built:
+        </p>
         <article>
-          <div class="card-projects">
-            <picture>
+          <div class="flex-center-center card-projects">
+            <picture class="flex-center-center card-img">
               <img
                 src="./public/assets/projects/example.png"
                 alt="example img"
               />
             </picture>
-            <div>
+            <div class="card-projects-content">
               <h3>Fiskil</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Delectus totam rerum sint?
               </p>
-              <div>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>Javascript</h4>
-                <h4>Git</h4>
-                <h4>Tailwindcss</h4>
-                <h4>Figma</h4>
+              <div class="flex-center">
+                <h4 class="pills">HTML</h4>
+                <h4 class="pills">CSS</h4>
+                <h4 class="pills">Javascript</h4>
+                <h4 class="pills">Git</h4>
+                <h4 class="pills">Tailwindcss</h4>
+                <h4 class="pills">Figma</h4>
               </div>
+
+              <a href="" class="card-projects-footer">
+                <img
+                  src="./public/icons/landing/link.svg"
+                  alt="external link icon"
+                />
+              </a>
             </div>
           </div>
           <div></div>
@@ -201,24 +214,68 @@
         </article>
       </section>
       <!-- Experiencia -->
-      <section>
-        <h4>Experience</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit:</p>
+      <section class="flex-center-center works-sections section-gray">
+        <h4 class="pills">Experience</h4>
+        <p class="description-section">
+          Here is a quick summary of my most recent experiences:
+        </p>
         <article>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="flex-center card-exp">
+            <div class="card-exp-title">
+              <h3>UpWork</h3>
+              <h5>Nov 2021 - Present</h5>
+            </div>
+            <div class="card-exp-detail">
+              <h2>Jr. Frontend Developer</h2>
+              <p class="description-section">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                veniam perspiciatis quasi.
+              </p>
+              <p class="description-section">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="card-exp">
+            <h3>UpWork</h3>
+            <h5>Nov 2021 - Present</h5>
+            <h2>Jr. Frontend Developer</h2>
+            <div class="card-exp-detail">
+              <p class="description-section">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                veniam perspiciatis quasi.
+              </p>
+              <p class="description-section">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="card-exp">
+            <h3>UpWork</h3>
+            <h5>Nov 2021 - Present</h5>
+            <h2>Jr. Frontend Developer</h2>
+            <div class="card-exp-detail">
+              <p class="description-section">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                veniam perspiciatis quasi.
+              </p>
+              <p class="description-section">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
       <!-- Contacto -->
-      <section>
-        <h4>Charlemos!</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-          velit animi recusandae harum eos, aut sequi voluptatibus adipisci
-          minus nobis!
+      <section class="flex-center-center works-sections">
+        <h4 class="pills">Charlemos!</h4>
+        <p class="description-section">
+          What’s next? Feel free to reach out to me if you're looking for a
+          developer, have a query, or simply want to connect.
         </p>
-        <form action=""></form>
+        <article>
+          <form action=""></form>
+        </article>
       </section>
     </main>
     <footer><p>° 2025 | Codeado con 💗 por Mauro Laime</p></footer>

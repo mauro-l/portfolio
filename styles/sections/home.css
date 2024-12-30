@@ -61,3 +61,70 @@
     margin-top: .5rem;
     padding: .5rem 1.25rem;
 }
+
+@media ( min-width: 1024px) {
+    .hero-container {
+        flex-direction: row;    
+        padding-top: 4rem;
+        justify-content: space-between;
+        height: 80vh;
+    }
+
+    .picture-hero {
+        order: 1;
+        flex-wrap: nowrap;
+        width: min-content;
+        margin-right: 2rem;
+    }
+
+    .picture-hero > img {
+        width: 280px;
+        height: 320px;        
+    }
+
+    .border-pic {
+        width: 280px;
+        height: 320px;
+        top: 40px;
+        right: -25px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1{
+        font-size: var(--text-6xl);
+    }
+
+    .hero-content p{
+        font-size: var(--text-lg);
+        line-height: 1.65;
+    }
+
+    .info-hero ul {
+        margin-top: .75rem;
+       
+    }
+    
+    .info-hero ul li {
+        display: inline-flex;
+        margin: -1.5rem 0;
+        padding-right: 2rem;
+        gap: .25rem;
+    }
+
+    .gps-icon {
+        width: 15px;
+    }
+
+    .info-hero ul li > p{
+        font-size: var(--text-sm);
+    }
+
+    .btn-contactme {
+        margin-top: 1rem;
+        padding: .65rem 1.75rem;
+    }
+    
+}
