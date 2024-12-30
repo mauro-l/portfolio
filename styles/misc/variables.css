@@ -18,6 +18,8 @@
 
     --primary-font-title: #111827;
     --primary-font-solid: #4B5563;
+
+    --accent-solid: #10B981;
     
 
     /* Typography */
@@ -64,7 +66,8 @@
     --primary-100: #1f2937;
     --primary-50:  #111827;
     
-    --primary-bg-solid: #30343F;
+    --primary-bg-solid: #030712;
+    /* --primary-bg-solid: #30343F; */
 
     --primary-font-title: #F9FAFB;
     --primary-font-solid: #D1D5DB;

@@ -17,7 +17,7 @@
     padding: 1rem 0;
     padding-bottom: .25rem;
     font-weight: 600;
-    border-bottom: 8px solid var(--primary-100);
+    border-bottom: 6px solid var(--accent-solid);
     color: var(--primary-700);
     display: inline-block;
     font-size: var(--text-xl);
@@ -45,6 +45,9 @@
     .card-exp {
         flex-direction: row;
         gap: 3rem;
+        align-items: start;
+        padding: 2rem;
+        justify-content: center;
     }
 
     .card-exp-title{
@@ -52,6 +55,22 @@
         flex-direction: column;
         max-width: min-content;
     }
+
+    .card-exp-title h3{
+        padding: 0;
+    }
+
+    .card-exp-title h5{
+        text-wrap: nowrap;
+    }
     
+    .card-exp-detail h2 {
+        display: inline;
+    }
+
+    .card-exp-detail p {
+        max-width: 500px;
+        font-size: var(--text-base);
+    }
 
 }

@@ -15,9 +15,7 @@
 /* PARTIALS */
 
 @import url('./partials/navbar.css');
-/* 
-@import url('./partials/menu-services.css');
-@import url('./partials/footer.css'); */
+@import url('./partials/footer.css'); 
 
 /* COMPONENTS */
 

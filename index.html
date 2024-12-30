@@ -10,48 +10,50 @@
     <div class="backdrop"></div>
     <header>
       <!-- Navbar -->
-      <nav class="flex-center navbar container">
-        <div class="blur"></div>
-        <div class="flex-center logo-header">
-          <h2>
-            <a href="#"> < <span> MHL </span> /></a>
-          </h2>
-        </div>
-
-        <div class="flex-center menu-navbar">
-          <div class="flex-center menu-top">
-            <h2>< <span> MHL </span> /></h2>
-            <button class="light flex-center-center btn-close">
-              <img src="./public/icons/nav/close.svg" alt="close icon" />
-            </button>
-          </div>
-          <div class="menu-list">
-            <ul class="flex-center">
-              <li>About</li>
-              <li>Work</li>
-              <li>Testimonial</li>
-              <li>Contact</li>
-            </ul>
+      <nav class="navbar-container">
+        <section class="flex-center navbar container">
+          <div class="blur"></div>
+          <div class="flex-center logo-header">
+            <h2>
+              <a href="#"> < <span> MHL </span> /></a>
+            </h2>
           </div>
 
-          <div class="btns-content">
-            <div class="dark-mode">
-              <p>Modo Oscuro</p>
+          <div class="flex-center menu-navbar">
+            <div class="flex-center menu-top">
+              <h2>< <span> MHL </span> /></h2>
               <button class="light flex-center-center btn-close">
-                <img
-                  src="./public/icons/darkMode/dark-mode.svg"
-                  alt="moon icon"
-                />
+                <img src="./public/icons/nav/close.svg" alt="close icon" />
               </button>
             </div>
-            <button class="download-btn">Descargar CV</button>
-          </div>
-        </div>
+            <div class="menu-list">
+              <ul class="flex-center">
+                <li>About</li>
+                <li>Work</li>
+                <li>Testimonial</li>
+                <li>Contact</li>
+              </ul>
+            </div>
 
-        <button class="menu-burger light flex-center-center">
-          <img src="./public/icons/nav/menu.svg" alt="menu burger icon" />
-          <!-- <img src="./assets/icons/menu-close.svg" alt="close menu icon" /> -->
-        </button>
+            <div class="btns-content">
+              <div class="dark-mode">
+                <p>Modo Oscuro</p>
+                <button class="light flex-center-center btn-close">
+                  <img
+                    src="./public/icons/darkMode/dark-mode.svg"
+                    alt="moon icon"
+                  />
+                </button>
+              </div>
+              <button class="download-btn">Descargar CV</button>
+            </div>
+          </div>
+
+          <button class="menu-burger light flex-center-center">
+            <img src="./public/icons/nav/menu.svg" alt="menu burger icon" />
+            <!-- <img src="./assets/icons/menu-close.svg" alt="close menu icon" /> -->
+          </button>
+        </section>
       </nav>
       <!-- Fin de Navbar -->
     </header>
@@ -63,11 +65,22 @@
           <img src="./public/assets/MauroPic.jpg" alt="Foto mia" />
         </picture>
         <article class="hero-content">
+          <h1 class="title-en" style="display: none">Hi! I´m Mauro 👋</h1>
           <h1>Hola! Soy Mauro 👋</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            eveniet ipsum repellat laudantium voluptas facilis. Dolorem aliquid
-            eligendi minima dignissimos error.
+            Soy un desarrollador Frontend especializado en React.js y Next.js,
+            con conocimientos en desarrollo backend utilizando Node.js y
+            Express. Me enfoco en crear experiencias digitales excepcionales que
+            son rápidas, accesibles, visualmente atractivas y responsivas. Como
+            desarrollador junior, aprovecho cada proyecto como una oportunidad
+            para crecer y fortalecer mis habilidades.
+          </p>
+          <p class="desc-en" style="display: none">
+            I'm a Frontend developer specialized in React.js and Next.js, with
+            backend development skills using Node.js and Express. I focus on
+            creating exceptional digital experiences that are fast, accessible,
+            visually appealing, and responsive. As a junior developer, I take
+            every project as an opportunity to grow and strengthen my skills.
           </p>
           <div class="flex-center info-hero">
             <ul>
@@ -86,6 +99,9 @@
                   class="status"
                 />
                 <p>Disponible para nuevos proyectos</p>
+                <p class="desc-en" style="display: none">
+                  Available for new projects
+                </p>
               </li>
             </ul>
             <div class="btn-contactme-box">
@@ -96,8 +112,15 @@
       </section>
       <!-- Skills -->
       <section class="flex-center-center skill-sections">
-        <h4 class="pills">Skills</h4>
-        <p>The skills, tools and technologies I am really good at:</p>
+        <h4 class="pills">Tecnologías</h4>
+        <h4 class="pills" style="display: none">Skills</h4>
+        <p>
+          Las habilidades, herramientas y tecnologías en las que soy realmente
+          bueno:
+        </p>
+        <p style="display: none">
+          The skills, tools and technologies I am really good at:
+        </p>
         <picture class="container skill-grid">
           <figure class="skill-tech">
             <img
@@ -173,8 +196,12 @@
       </section>
       <!-- Proyectos -->
       <section class="container flex-center-center works-sections">
-        <h4 class="pills">Projects</h4>
+        <h4 class="pills">Proyectos</h4>
+        <h4 class="pills" style="display: none">Projects</h4>
         <p class="description-section">
+          Algunos de los proyectos destacados que he desarrollado:
+        </p>
+        <p class="description-section" style="display: none">
           Some of the noteworthy projects I have built:
         </p>
         <article>
@@ -215,9 +242,13 @@
       </section>
       <!-- Experiencia -->
       <section class="flex-center-center works-sections section-gray">
-        <h4 class="pills">Experience</h4>
-        <p class="description-section">
+        <h4 class="pills" style="display: none">Experience</h4>
+        <p class="description-section" style="display: none">
           Here is a quick summary of my most recent experiences:
+        </p>
+        <h4 class="pills">Experiencia</h4>
+        <p class="description-section">
+          Aquí tienes un resumen rápido de mis experiencias más recientes:
         </p>
         <article>
           <div class="flex-center card-exp">
@@ -236,25 +267,13 @@
               </p>
             </div>
           </div>
-          <div class="card-exp">
-            <h3>UpWork</h3>
-            <h5>Nov 2021 - Present</h5>
-            <h2>Jr. Frontend Developer</h2>
-            <div class="card-exp-detail">
-              <p class="description-section">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-                veniam perspiciatis quasi.
-              </p>
-              <p class="description-section">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
+          <div class="flex-center card-exp">
+            <div class="card-exp-title">
+              <h3>UpWork</h3>
+              <h5>Nov 2021 - Present</h5>
             </div>
-          </div>
-          <div class="card-exp">
-            <h3>UpWork</h3>
-            <h5>Nov 2021 - Present</h5>
-            <h2>Jr. Frontend Developer</h2>
             <div class="card-exp-detail">
+              <h2>Jr. Frontend Developer</h2>
               <p class="description-section">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
                 veniam perspiciatis quasi.
@@ -269,15 +288,61 @@
       <!-- Contacto -->
       <section class="flex-center-center works-sections">
         <h4 class="pills">Charlemos!</h4>
-        <p class="description-section">
+        <p class="description-section contact-desc contact-esp">
+          ¿Qué sigue? No dudes en comunicarte conmigo si estás buscando un
+          desarrollador, tienes alguna consulta o simplemente quieres
+          conectarte.
+        </p>
+        <p class="description-section conctact-en" style="display: none">
           What’s next? Feel free to reach out to me if you're looking for a
           developer, have a query, or simply want to connect.
         </p>
+        <div class="btn-contactme-box">
+          <a href="mailto:maurol.dev@gmail.com">
+            <button class="btn-contactme">Contactame!</button>
+          </a>
+        </div>
+        <div>
+          <p class="description-section contact-more contact-esp">
+            ¡También puedes encontrarme en estas plataformas!
+          </p>
+          <p class="description-section conctact-en" style="display: none">
+            You may also find me on these platforms!
+          </p>
+          <picture class="flex-center-center social-media">
+            <a href="">
+              <img
+                src="./public/icons/socialMedia/linkedin.svg"
+                alt="linkedin logo"
+              />
+            </a>
+            <a href="">
+              <img
+                src="./public/icons/socialMedia/github.svg"
+                alt="github logo"
+              />
+            </a>
+            <a href="">
+              <img src="./public/icons/socialMedia/mail.svg" alt="mail logo" />
+            </a>
+          </picture>
+        </div>
         <article>
           <form action=""></form>
         </article>
       </section>
     </main>
-    <footer><p>° 2025 | Codeado con 💗 por Mauro Laime</p></footer>
+    <footer class="flex-center-center">
+      <p>
+        Hecho a mano por mí
+        <img src="./public/icons/landing/copy.svg" alt="copyright icon" /> Mauro
+        Laime 💗 2025
+      </p>
+      <p class="desc-en">
+        Handcrafted by me
+        <img src="./public/icons/landing/copy.svg" alt="copyright icon" /> Mauro
+        Laime 💗 2025
+      </p>
+    </footer>
   </body>
 </html>

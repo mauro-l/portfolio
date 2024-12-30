@@ -4,11 +4,10 @@
     padding: 0 1rem;
 }
 
-/* .grid-fixed {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-} */ 
+.desc-en,
+.title-en{
+    display: none;
+}
 
 .flex-center {
     display: flex;

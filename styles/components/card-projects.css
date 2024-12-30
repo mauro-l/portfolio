@@ -41,6 +41,7 @@
 .card-projects-content > div{
     flex-wrap: wrap;
     gap: .5rem;
+    padding-bottom: 2rem;
 }
 
 .card-projects-content > div > h4{
@@ -49,8 +50,7 @@
 }
 
 .card-projects-footer {
-    padding: 2rem;
-    padding-top: 0;
+    padding: 2rem 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -81,7 +81,8 @@
 
     .card-projects-footer {
         display: flex;
-        padding: 2rem 0;
+        padding: 0;
+        padding-bottom: 2rem;
         width: 100%;
         box-sizing: border-box;
     }

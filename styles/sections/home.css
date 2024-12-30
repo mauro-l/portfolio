@@ -1,9 +1,8 @@
 
 .hero-container {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     width: 100%;
     flex-direction: column;
-    padding-top: 6rem;
     margin: 0 auto;
     gap: 3rem;
     box-sizing: border-box;
@@ -33,13 +32,15 @@
 }
 
 .hero-content p{
-    line-height: 1.75;
+    line-height: 1.65;
 }
 
 .info-hero {
     flex-direction: column;
     width: 100%;
     align-items: start;
+    margin-top: 3rem;
+    padding: 1rem 0;
 }
 
 .info-hero ul {
@@ -99,7 +100,10 @@
 
     .hero-content p{
         font-size: var(--text-lg);
-        line-height: 1.65;
+    }
+
+    .info-hero {
+        margin-top: 0;
     }
 
     .info-hero ul {
@@ -127,4 +131,10 @@
         padding: .65rem 1.75rem;
     }
     
+}
+
+@media ( min-width: 1280px) {
+    .hero-container {
+        padding: 3rem;
+    }
 }

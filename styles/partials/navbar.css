@@ -16,19 +16,26 @@ header{
     backdrop-filter: blur(24px);
 }
 
+.navbar-container {
+    background-color: var(--primary-solid);
+    border-bottom: 1px solid var(--primary-100);
+    width: 100%;
+}
+
 .navbar {
+    position: sticky;
+    z-index: 100;
+    padding: 1rem;
     /* position: absolute; */
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    border-bottom: 1px solid var(--primary-100);
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: var(--primary-solid);
 }
 
 .menu-navbar {
