@@ -1,80 +1,34 @@
-/* header {
-    background-color: transparent;
-}
-.navbar {
-    position: sticky;
-    z-index: 100;
-    justify-content: space-between;    
-    padding: 0 1rem;
-    width: 100%;
-}
-
-.menu-navbar {
-    gap: var(--spacing-8);
-}
-
-.menu-list > ul {
-    font-size: var(--text-lg);
-    justify-content: center;
-    gap: var(--spacing-6);
-}
-
-.menu-list > ul > li {
-    margin: 0 auto;
-}
-
-
-.user-navbar {
-    background-color: white;
-    border: none;
-    padding: var(--spacing-2) var(--spacing-2s);
-    border-radius: 20%;    
-    box-shadow: var(--btn-shadow);
-    cursor: pointer;
-    margin: var(--spacing-0s);
-}
-
-.user-navbar:active {
-    background-color: var(--primary-300);    
-}
-
-.user-icon {
-    padding: var(--spacing-0s);
-    width: var(--spacing-5);
-    height: var(--spacing-5);
-    color: red;
-}
-
-.user-navbar > svg{
-    color: gold;
-}
-
-.menu-burger {
-    display: none;
-    padding: var(--spacing-2s);
-    background-color: var(--primary-solid);
-    border: none;
-    border-radius: 5px;
-}
-
-.menu-burger:active {
-    background-color: var(--primary-500);
-}
-
-.logo-burger {
-    display: none;
-} */
-
-
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.blur {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    min-height: 100px;
+    backdrop-filter: blur(24px);
 }
 
 .navbar {
+    /* position: absolute; */
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
+    border-bottom: 1px solid var(--primary-100);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--primary-solid);
 }
 
 .menu-navbar {
@@ -118,12 +72,20 @@ header{
     gap: var(--spacing-1);
 }
 
-.search-label > h2 {
+.logo-header > h2 a,
+.logo-header > h2 a:active,
+.logo-header > h2 a:visited {
+    text-decoration: none;
+    color: var(--primary-font-title);
+}
+
+.menu-top > h2 {
     font-size: var(--text-2xl);
 }
 
 .menu-burger {
     padding: .375rem;
+    margin: .375rem;
 }
 
 .btns-content{
@@ -132,6 +94,7 @@ header{
     flex-direction: column;
     gap: 1rem;
 }
+
 .btn-close{
     max-width: min-content;
     padding: .375rem;
@@ -166,16 +129,13 @@ header{
   }
     
 
-@media ( min-width: 1440px) {
+@media ( min-width: 1024px) {
     /* estilos para sm y mayores */
     
     .navbar {
-        max-width: 1440px;
+        max-width: 1280px;
     }
 
-    header {
-        background-color: transparent;
-    }
     .navbar {
         position: sticky;
         z-index: 100;
@@ -183,60 +143,55 @@ header{
         padding: 0 1rem;
         width: 100%;
     }
-    
+
     .menu-navbar {
-        gap: var(--spacing-8);
+        display: flex;
+        visibility: visible;
+        flex-direction: row;
+        position: relative;
+        gap: 1rem;
+        color: var(--primary-font-solid);
+        height: auto;
+        width: max-content;
+    }
+
+    .menu-list{
+        padding: 0rem;
+        padding-right: 1.5rem ;
+        border: none;
+        border-right: 1px solid var(--primary-200);
     }
     
     .menu-list > ul {
+        flex-direction: row;
         font-size: var(--text-lg);
-        justify-content: center;
-        gap: var(--spacing-6);
+        justify-content: start;
+        align-items: start;
+        gap: 1.5rem;
     }
-    
-    .menu-list > ul > li {
-        margin: 0 auto;
+        
+    .menu-top {
+        display: none;
     }
-    
-    
-    .user-navbar {
-        background-color: white;
-        border: none;
-        padding: var(--spacing-2) var(--spacing-2s);
-        border-radius: 20%;    
-        box-shadow: var(--btn-shadow);
-        cursor: pointer;
-        margin: var(--spacing-0s);
-    }
-    
-    .user-navbar:active {
-        background-color: var(--primary-300);    
-    }
-    
-    .user-icon {
-        padding: var(--spacing-0s);
-        width: var(--spacing-5);
-        height: var(--spacing-5);
-        color: red;
-    }
-    
-    .user-navbar > svg{
-        color: gold;
-    }
-    
+            
     .menu-burger {
         display: none;
-        padding: var(--spacing-2s);
-        background-color: var(--primary-solid);
-        border: none;
-        border-radius: 5px;
+    }
+
+    .btns-content{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
     
-    .menu-burger:active {
-        background-color: var(--primary-500);
-    }
-    
-    .logo-burger {
+    .dark-mode > p {
         display: none;
+    }
+
+    .download-btn{
+        width: 100%;
+        padding: .5rem 1rem;
+        font-weight: 600;
     }
 }

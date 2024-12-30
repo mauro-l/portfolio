@@ -20,3 +20,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.pills {
+    display: inline-block;
+    background-color: var(--primary-200);
+    padding: .25rem 1.25rem;
+    border-radius: 12px;
+    color: var(--primary-600);
+    text-align: center;
+}

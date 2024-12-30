@@ -1,0 +1,35 @@
+.skill-sections {
+    background-color: var(--primary-100);
+    padding: 4rem 1rem;
+    flex-direction: column;
+}
+
+.skill-sections p {
+    text-align: center;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.skill-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    font-size: var(--text-sm);
+    color: var(--primary-600);
+    gap: .5rem;
+}
+
+.skill-tech > img {
+    margin: 0 auto;
+}

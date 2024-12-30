@@ -1,0 +1,63 @@
+
+.hero-container {
+    padding: 4rem 1rem;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 6rem;
+    margin: 0 auto;
+    gap: 3rem;
+    box-sizing: border-box;
+}
+
+.picture-hero {
+    width: 100%;
+    position: relative;
+}
+
+.picture-hero > img {
+    width: 240px;
+    height: 280px;
+    margin: 0 auto;
+    border: 8px solid var(--primary-solid);
+    object-fit: fill;
+}
+
+.border-pic {
+    background-color: var(--primary-200);
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 30px;
+    margin: 0 auto;
+    z-index: -10;
+}
+
+.hero-content p{
+    line-height: 1.75;
+}
+
+.info-hero {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+}
+
+.info-hero ul {
+    margin-top: -1.75rem;
+    font-size: var(--text-sm);
+}
+
+.info-hero ul li {
+    display: inline-flex;
+    margin: -1.5rem 0;
+    gap: .25rem;
+}
+
+.status{
+    padding: 0 .5rem;
+}
+
+.btn-contactme {
+    margin-top: .5rem;
+    padding: .5rem 1.25rem;
+}

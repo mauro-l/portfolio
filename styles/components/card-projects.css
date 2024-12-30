@@ -1,0 +1,13 @@
+.card-projects {
+    border-radius: 12px;
+    border: 1px solid var(--primary-200);
+}
+
+.card-img {
+    background-color: var(--primary-100);
+}
+
+.card-img > img {
+    height: 256px;
+    border-radius: 12px;
+}
