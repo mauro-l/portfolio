@@ -10,7 +10,7 @@
 
 .picture-hero {
     width: 100%;
-    position: relative;
+    position: relative;    
 }
 
 .picture-hero > img {
@@ -61,6 +61,11 @@
 .btn-contactme {
     margin-top: .5rem;
     padding: .5rem 1.25rem;
+}
+
+.animation-hand {
+    display: inline-block;
+    animation: waving 2s linear 3;
 }
 
 @media ( min-width: 1024px) {
@@ -136,5 +141,32 @@
 @media ( min-width: 1280px) {
     .hero-container {
         padding: 3rem;
+    }
+}
+
+@keyframes waving {
+    0% {
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }

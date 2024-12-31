@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Mauro Laime - Frontend Developer</title>
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
-    <div class="backdrop"></div>
+    <!-- <div class="backdrop" id="backdrop"></div> -->
     <header>
       <!-- Navbar -->
       <nav class="navbar-container">
@@ -19,19 +27,25 @@
             </h2>
           </div>
 
-          <div class="flex-center menu-navbar">
+          <div class="flex-center menu-navbar" id="nav">
             <div class="flex-center menu-top">
               <h2>< <span> MHL </span> /></h2>
-              <button class="light flex-center-center btn-close">
+              <button class="light flex-center-center btn-close" id="close">
                 <img src="./public/icons/nav/close.svg" alt="close icon" />
               </button>
             </div>
             <div class="menu-list">
               <ul class="flex-center">
                 <!-- <li>About</li> -->
-                <li>Proyectos</li>
-                <li>Experiencia</li>
-                <li>Contacto</li>
+                <li>
+                  <a href="#Projects"> Proyectos </a>
+                </li>
+                <li>
+                  <a href="#Experience"> Experiencia </a>
+                </li>
+                <li>
+                  <a href="#Contact"> Contacto </a>
+                </li>
               </ul>
             </div>
 
@@ -45,11 +59,13 @@
                   />
                 </button>
               </div>
-              <button class="download-btn">Descargar CV</button>
+              <a href="./public/files/MauroLaime-cv.pdf" target="_blank">
+                <button class="download-btn">Descargar CV</button>
+              </a>
             </div>
           </div>
 
-          <button class="menu-burger light flex-center-center">
+          <button class="menu-burger light flex-center-center" id="open">
             <img src="./public/icons/nav/menu.svg" alt="menu burger icon" />
             <!-- <img src="./assets/icons/menu-close.svg" alt="close menu icon" /> -->
           </button>
@@ -65,8 +81,10 @@
           <img src="./public/assets/MauroPic.jpg" alt="Foto mia" />
         </picture>
         <article class="hero-content">
-          <h1 class="title-en" style="display: none">Hi! I´m Mauro 👋</h1>
-          <h1>Hola! Soy Mauro 👋</h1>
+          <h1 class="title-en" style="display: none">
+            Hi! I´m Mauro <span class="animation-hand">👋</span>
+          </h1>
+          <h1>Hola! Soy Mauro <span class="animation-hand">👋</span></h1>
           <p>
             Soy un desarrollador Frontend especializado en React.js y Next.js,
             con conocimientos en desarrollo backend utilizando Node.js y
@@ -195,7 +213,10 @@
         </picture>
       </section>
       <!-- Proyectos -->
-      <section class="container flex-center-center works-sections">
+      <section
+        class="container flex-center-center works-sections"
+        id="Projects"
+      >
         <h4 class="pills">Proyectos</h4>
         <h4 class="pills" style="display: none">Projects</h4>
         <p class="description-section">
@@ -352,7 +373,10 @@
         </article>
       </section>
       <!-- Experiencia -->
-      <section class="flex-center-center works-sections section-gray">
+      <section
+        class="flex-center-center works-sections section-gray"
+        id="Experience"
+      >
         <h4 class="pills" style="display: none">Experience</h4>
         <p class="description-section" style="display: none">
           Here is a quick summary of my most recent experiences:
@@ -397,7 +421,10 @@
         </article>
       </section>
       <!-- Contacto -->
-      <section class="flex-center-center works-sections">
+      <section
+        class="flex-center-center works-sections contact-section"
+        id="Contact"
+      >
         <h4 class="pills">Charlemos!</h4>
         <p class="description-section contact-desc contact-esp">
           ¿Qué sigue? No dudes en comunicarte conmigo si estás buscando un
@@ -438,9 +465,9 @@
             </a>
           </picture>
         </div>
-        <article>
+        <!-- <article>
           <form action=""></form>
-        </article>
+        </article> -->
       </section>
     </main>
     <footer class="flex-center-center">
@@ -455,5 +482,6 @@
         Laime 💗 2025
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

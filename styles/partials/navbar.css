@@ -24,15 +24,13 @@ header{
 
 .navbar {
     position: sticky;
-    z-index: 100;
+    z-index: 50;
     padding: 1rem;
-    /* position: absolute; */
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: 10;
@@ -41,16 +39,49 @@ header{
 .menu-navbar {
     display: block;
     visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 10;
     flex-direction: column;
     background-color: var(--primary-solid);
     gap: 3rem;
     height: 100vh;
     width: 85%;
     color: var(--primary-font-solid);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
+    z-index: 10;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+/* .menu-navbar::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    z-index: -10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+}
+
+.menu-navbar.visible::before {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0s;
+} */
+
+.menu-navbar.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s;
+    /* animation: open .3s ease-in-out; */
 }
 
 .menu-list{
@@ -118,24 +149,6 @@ header{
     font-weight: 600;
 }
 
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(0px); /* Inicialmente sin desenfoque */
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 10;
-    /* backdrop-filter: blur(5px);
-    opacity: 1;
-    visibility: visible; */
-  }
-    
-
 @media ( min-width: 1024px) {
     /* estilos para sm y mayores */
     
@@ -160,6 +173,7 @@ header{
         color: var(--primary-font-solid);
         height: auto;
         width: max-content;
+        opacity: 1;
     }
 
     .menu-list{
@@ -202,3 +216,17 @@ header{
         font-weight: 600;
     }
 }
+
+/* @keyframes open {
+    0% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes closed {
+    0% {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+} */
