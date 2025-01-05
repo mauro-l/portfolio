@@ -68,6 +68,79 @@
     animation: waving 2s linear 3;
 }
 
+.btn-arrowUp {
+    position: fixed;
+    border-radius: 100%;
+    bottom: 2rem;
+    right: 0.5rem;
+    padding: 0;
+    z-index: -1;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.arrowUp {
+    display: flex;    
+    color: var(--primary-font-title);
+    border-radius: 50%;
+    border: 2px solid var(--primary-font-title);
+    width: 2rem;
+    height: 2rem;
+    z-index: -1;
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+    background-color: transparent;    
+}
+
+/* .btn-arrowUp > span {
+    position: absolute;
+    border: 2px solid var(--primary-font-title);
+    border-radius: 50%;
+    background-color: rgba(255, 69, 0, .5);
+    bottom: -1;
+    right: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+} */
+
+.btn-arrowUp:active {
+    background-color: transparent;
+}
+
+.btn-arrowUp:active .light:active {
+    background-color: transparent;
+}
+
+.btn-arrowUp:hover {
+    background-color: transparent;
+}
+
+.btn-arrowUp:hover .light:hover {
+    background-color: transparent;
+}
+
+.show-btn-up {
+    z-index: 10;
+}
+
+.show-btn-up .btn-arrowUp {
+    animation: pop .3s ease-in-out;
+    width: 2rem;
+    height: 2rem;
+    z-index: 11;
+}
+
+.show-btn-up .arrowUp {
+    transform: scale(1);
+}
+
+main{
+    position: relative;
+}
+
 @media ( min-width: 1024px) {
     .hero-container {
         flex-direction: row;    
@@ -135,6 +208,7 @@
         margin-top: 1rem;
         padding: .65rem 1.75rem;
     }
+
     
 }
 
@@ -168,5 +242,20 @@
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@keyframes pop {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+    50% {
+        width: 4rem;
+        height: 4rem;
+    }
+    100% {
+        width: 2rem;
+        height: 2rem;
     }
 }

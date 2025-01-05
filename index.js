@@ -2,6 +2,26 @@ const nav = document.getElementById("nav");
 const btnOpen = document.getElementById("open");
 const btnClose = document.getElementById("close");
 const navContainer = document.getElementById("navBox");
+const btnUp = document.getElementById("btnUp");
+
+/* boton scroll */
+
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 150) {
+    btnUp.classList.add("show-btn-up");
+  } else {
+    btnUp.classList.remove("show-btn-up");
+  }
+};
+
+btnUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+/* navbar */
 
 btnOpen.addEventListener("click", () => {
   nav.classList.add("visible");

@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Primera version de mi portfolio personal",
   "main": "index.js",
   "scripts": {
@@ -18,3 +18,4 @@
     "live-server": "^1.2.0"
   }
 }
+
