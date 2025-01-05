@@ -26,9 +26,11 @@ btnUp.addEventListener("click", () => {
 btnOpen.addEventListener("click", () => {
   nav.classList.add("visible");
   navContainer.style.overflowX = "visible";
+  navContainer.style.backdropFilter = "none";
 });
 
 btnClose.addEventListener("click", () => {
+  navContainer.style.backdropFilter = "blur(24px)";
   nav.classList.remove("visible");
   setTimeout(() => {
     navContainer.style.overflowX = "hidden";
@@ -43,6 +45,7 @@ document.querySelectorAll("nav a").forEach((anchor) => {
       .scrollIntoView({ behavior: "smooth" });
     if (nav.classList.contains("visible")) {
       nav.classList.remove("visible");
+      navContainer.style.backdropFilter = "blur(24px)";
     }
   });
 });
