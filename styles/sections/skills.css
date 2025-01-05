@@ -31,10 +31,15 @@
     gap: .5rem;
 }
 
+
 .skill-tech > img {
+    transition: all .2s ease;
     margin: 0 auto;
 }
 
+.skill-tech:hover > img {
+    transform: scale(1.1);
+}
 @media ( min-width: 1024px) {
 
     .skill-sections {

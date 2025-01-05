@@ -66,6 +66,7 @@
 .animation-hand {
     display: inline-block;
     animation: waving 2s linear 3;
+    cursor: default;
 }
 
 .btn-arrowUp {

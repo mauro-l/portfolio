@@ -3,6 +3,7 @@ const btnOpen = document.getElementById("open");
 const btnClose = document.getElementById("close");
 const navContainer = document.getElementById("navBox");
 const btnUp = document.getElementById("btnUp");
+const heart = document.getElementById("heart");
 
 /* boton scroll */
 
@@ -48,4 +49,14 @@ document.querySelectorAll("nav a").forEach((anchor) => {
       navContainer.style.backdropFilter = "blur(24px)";
     }
   });
+});
+
+/* boton heart like */
+
+heart.addEventListener("click", () => {
+  heart.classList.toggle("like");
+
+  /* setTimeout(() => {
+    heart.classList.remove("like");
+  }, 1000); */
 });

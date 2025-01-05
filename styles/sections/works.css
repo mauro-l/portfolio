@@ -33,7 +33,7 @@
 }
 
 .social-media {
-    gap: .5rem;
+    gap: .75rem;
 }
 
 @media ( min-width: 1024px) {
