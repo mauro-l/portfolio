@@ -20,6 +20,7 @@ header{
     background-color: var(--primary-solid);
     border-bottom: 1px solid var(--primary-100);
     width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {

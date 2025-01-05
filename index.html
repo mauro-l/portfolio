@@ -16,9 +16,10 @@
   </head>
   <body>
     <!-- <div class="backdrop" id="backdrop"></div> -->
+
     <header>
       <!-- Navbar -->
-      <nav class="navbar-container">
+      <nav class="navbar-container" id="navBox">
         <section class="flex-center navbar container">
           <div class="blur"></div>
           <div class="flex-center logo-header">
@@ -73,6 +74,7 @@
       </nav>
       <!-- Fin de Navbar -->
     </header>
+
     <main>
       <!-- Hero -->
       <section class="container flex-center-center hero-container">
@@ -128,6 +130,7 @@
           </div>
         </article>
       </section>
+
       <!-- Skills -->
       <section class="flex-center-center skill-sections">
         <h4 class="pills">Tecnologías</h4>
@@ -212,6 +215,9 @@
           </figure>
         </picture>
       </section>
+      <button class="btn-arrowUp light">
+        <i data-lucide="arrow-up" class="arrowUp"></i>
+      </button>
       <!-- Proyectos -->
       <section
         class="container flex-center-center works-sections"
@@ -483,5 +489,10 @@
       </p>
     </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
