@@ -2,18 +2,42 @@ const nav = document.getElementById("nav");
 const btnOpen = document.getElementById("open");
 const btnClose = document.getElementById("close");
 const navContainer = document.getElementById("navBox");
+
 const btnUp = document.getElementById("btnUp");
+const progressCircle = document.querySelector(".btn-arrowUp circle.progress");
+const radius = 45;
+const circumference = 2 * Math.PI * radius;
+
 const heart = document.getElementById("heart");
 
 /* boton scroll */
 
-window.onscroll = () => {
+progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+progressCircle.style.strokeDashoffset = circumference;
+
+function updateProgress() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollTop / docHeight;
+
+  // Calculate the stroke offset
+  const offset = circumference - progress * circumference;
+  progressCircle.style.strokeDashoffset = offset;
+
+  if (scrollTop > 150) {
+    btnUp.classList.add("show-btn-up");
+  } else {
+    btnUp.classList.remove("show-btn-up");
+  }
+}
+
+/* window.onscroll = () => {
   if (document.documentElement.scrollTop > 150) {
     btnUp.classList.add("show-btn-up");
   } else {
     btnUp.classList.remove("show-btn-up");
   }
-};
+}; */
 
 btnUp.addEventListener("click", () => {
   window.scrollTo({
@@ -21,6 +45,10 @@ btnUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+window.addEventListener("scroll", updateProgress);
+
+updateProgress();
 
 /* navbar */
 
@@ -55,8 +83,4 @@ document.querySelectorAll("nav a").forEach((anchor) => {
 
 heart.addEventListener("click", () => {
   heart.classList.toggle("like");
-
-  /* setTimeout(() => {
-    heart.classList.remove("like");
-  }, 1000); */
 });
