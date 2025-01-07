@@ -116,6 +116,10 @@ header{
     justify-content: space-between;
 }
 
+.dark-mode > .btn-close {
+    background-color: transparent;
+}
+
 .download-btn{
     width: 100%;
     padding: .5rem 0;
