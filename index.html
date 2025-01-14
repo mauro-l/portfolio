@@ -14,7 +14,7 @@
     <title>Mauro Laime - Frontend Developer</title>
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
       <!-- Navbar -->
       <nav class="navbar-container" id="navBox">
@@ -50,8 +50,20 @@
             <div class="btns-content">
               <div class="dark-mode">
                 <p>Modo Oscuro</p>
-                <button class="light flex-center-center btn-close">
-                  <i data-lucide="moon-star" class="icon-color"></i>
+                <button
+                  class="light flex-center-center btn-close"
+                  id="darkMode"
+                >
+                  <i
+                    data-lucide="moon-star"
+                    class="icon-color icon-dark-mode active"
+                    id="iconMoon"
+                  ></i>
+                  <i
+                    data-lucide="sun"
+                    class="icon-color icon-dark-mode"
+                    id="iconSun"
+                  ></i>
                 </button>
               </div>
               <a href="./public/files/MauroLaime-cv.pdf" target="_blank">

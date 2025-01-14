@@ -2,6 +2,8 @@ const nav = document.getElementById("nav");
 const btnOpen = document.getElementById("open");
 const btnClose = document.getElementById("close");
 const navContainer = document.getElementById("navBox");
+const switchMode = document.getElementById("darkMode");
+const body = document.getElementById("body");
 
 const btnUp = document.getElementById("btnUp");
 const progressCircle = document.querySelector(".btn-arrowUp circle.progress");
@@ -9,6 +11,24 @@ const radius = 45;
 const circumference = 2 * Math.PI * radius;
 
 const heart = document.getElementById("heart");
+
+/* dark mode */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme) {
+    body.classList.add(savedTheme);
+
+    if (savedTheme === "dark") {
+      iconMoon.classList.remove("active");
+      iconSun.classList.add("active");
+    } else {
+      iconMoon.classList.add("active");
+      iconSun.classList.remove("active");
+    }
+  }
+});
 
 /* boton scroll */
 
@@ -52,6 +72,9 @@ updateProgress();
 
 /* navbar */
 
+const iconMoon = document.getElementById("iconMoon");
+const iconSun = document.getElementById("iconSun");
+
 btnOpen.addEventListener("click", () => {
   nav.classList.add("visible");
   navContainer.style.overflowX = "visible";
@@ -64,6 +87,19 @@ btnClose.addEventListener("click", () => {
   setTimeout(() => {
     navContainer.style.overflowX = "hidden";
   }, 400);
+});
+
+switchMode.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  if (body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    iconMoon.classList.remove("active");
+    iconSun.classList.add("active");
+  } else {
+    localStorage.setItem("theme", "light");
+    iconMoon.classList.add("active");
+    iconSun.classList.remove("active");
+  }
 });
 
 document.querySelectorAll("nav a").forEach((anchor) => {

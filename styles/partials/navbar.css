@@ -126,6 +126,14 @@ header{
     font-weight: 600;
 }
 
+.icon-dark-mode {
+    display: none;
+}
+
+.icon-dark-mode.active{
+    display: block;
+}
+
 @media ( min-width: 1024px) {
     /* estilos para sm y mayores */
     

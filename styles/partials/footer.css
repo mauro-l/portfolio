@@ -12,6 +12,7 @@ footer > p{
     margin: 0;
     gap: .25rem;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 footer > p > img{
