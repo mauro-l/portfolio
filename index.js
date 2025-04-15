@@ -97,8 +97,16 @@ switchMode.addEventListener("click", () => {
 document.querySelectorAll("nav a").forEach((anchor) => {
   const href = anchor.getAttribute("href");
 
-  // Solo aplica el scroll suave si el href comienza con "#"
-  if (href.startsWith("#")) {
+  // Solo aplica el scroll suave si el href comienza con "#" o es "#"
+  if (href === "#") {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Desplazamiento suave hacia arriba
+      });
+    });
+  } else if (href.startsWith("#")) {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(href).scrollIntoView({ behavior: "smooth" });
