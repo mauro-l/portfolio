@@ -106,7 +106,7 @@
     background-color: transparent;
 }
 
-.btn-arrowUp:active .light:active {
+.btn-arrowUp:active.light {
     background-color: transparent;
 }
 
@@ -114,7 +114,7 @@
     background-color: transparent;
 }
 
-.btn-arrowUp:hover .light:hover {
+.btn-arrowUp.light:hover {
     background-color: transparent;
 }
 
